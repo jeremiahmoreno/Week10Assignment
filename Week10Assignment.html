@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registry</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body style="padding-top: 30px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+                <img src="TARDIS.png" width="25" height="50">
+            </div> 
+            <div class="col-md-11"> 
+                <h1 style="color:blue">The Doctor Who Registry</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <form>
+                    <div class="form-group">
+                        <label for="tableFirstName">Actor's First Name</label>
+                        <input type="text" class="form-control" id="tableFirstName" placeholder="Please enter first name:">
+                    </div>
+                    <div class="form-group">
+                        <label for="tableLastName">Actor's Last Name</label>
+                        <input type="text" class="form-control" id="tableLastName" placeholder="Please enter last name:">
+                    </div>
+                    <div class="form-group">
+                        <label for="doctorNum">Doctor Who #</label>
+                        <input type="text" class="form-control" id="doctorNum" placeholder="Enter which Doctor this actor played:">
+                    <br>
+                    </div>
+                    <button type="button" onclick="addToTable()" class="btn btn-primary form-control">Submit</button>
+                </form>
+            </div>
+        </div>    
+        <br>
+        <div class="row"></div>    
+            <div class="col-md">
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Doctor Who #</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="Week10Assignment.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
